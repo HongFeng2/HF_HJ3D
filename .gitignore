@@ -1,7 +1,9 @@
-
 *.meta
 Library
 ProjectSettings
 Temp
 UnityPackageManager
 HF_HJ3D.sln
+.vs
+HF_HJ3D.csproj
+HF_HJ3D.Editor.csproj
