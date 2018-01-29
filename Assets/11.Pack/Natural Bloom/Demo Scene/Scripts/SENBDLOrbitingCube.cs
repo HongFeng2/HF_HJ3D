@@ -47,7 +47,7 @@ public class SENBDLOrbitingCube : MonoBehaviour
 		Quaternion sphereRotation = Quaternion.Euler(randomSphereRotation * Time.time * sphereRotationSpeed);
 		Vector3 pos = sphereRotation * spherePosition;
 		pos += spherePosition * (Mathf.Sin(Time.time - spherePosition.magnitude / 10.0f) * 0.5f + 0.5f);
-		pos += sphereRotation * spherePosition * (Mathf.Sin((Time.time * 3.1415265f / 4.0f) - spherePosition.magnitude / 10.0f) * 0.5f + 0.5f);
+		//pos += sphereRotation * spherePosition * (Mathf.Sin((Time.time * 3.1415265f / 4.0f) - spherePosition.magnitude / 10.0f) * 0.5f + 0.5f);
 		transf.localPosition = pos;
 		transf.rotation = Quaternion.Euler(rotationVector * Time.time * rotationSpeed);
 	}

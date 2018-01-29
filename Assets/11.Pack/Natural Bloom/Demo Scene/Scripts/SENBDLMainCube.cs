@@ -31,23 +31,31 @@ public class SENBDLMainCube : MonoBehaviour
 	void Start() 
 	{
 
-		glowColors[0] = new Color(255f / 255f, 120f / 255f,  13f / 255f);
-        glowColors[2] = new Color(235f / 255f, 100f / 255f, 33f / 255f);
-        glowColors[1] = new Color(215f / 255f, 80f / 255f, 53f / 255f);
-        glowColors[3] = new Color(195f / 255f, 60f / 255f, 73f / 255f);
-        //glowColors[2] = new Color(84f  / 255f, 163f / 255f, 255f / 255f);
-        //glowColors[1] = new Color(155f / 255f, 255f / 255f,  30f / 255f);
-        //glowColors[3] = new Color(255f / 255f, 47f  / 255f,   0f / 255f);
+		glowColors[0] = new Color(235f / 235f, 120f / 235f,  13f / 235f);
+        //glowColors[2] = new Color(235f / 235f, 100f / 235f, 33f / 235f);
+        //glowColors[1] = new Color(215f / 235f, 80f / 235f, 53f / 235f);
+        //glowColors[3] = new Color(195f / 235f, 60f / 235f, 73f / 235f);
+
+        //glowColors[2] = new Color(84f / 255f, 163f / 255f, 255f / 255f);
+        //glowColors[1] = new Color(155f / 255f, 255f / 255f, 30f / 255f);
+        //glowColors[3] = new Color(255f / 255f, 47f / 255f, 0f / 255f);
+
+        
+        glowColors[2] = new Color(255f / 255f, 47f  / 255f,   0f / 255f);
+        //glowColors[2] = new Color(235f / 235f, 100f / 235f, 33f / 235f);
+        glowColors[1] = new Color(84f / 255f, 163f / 255f, 255f / 255f);
+        glowColors[3] = new Color(84f / 255f, 163f / 255f, 255f / 255f);
+        //glowColors[3] = new Color(195f / 235f, 60f / 235f, 73f / 235f);
         currentColor = glowColors[0];
 
 
 		SENBDLGlobal.sphereOfCubesRotation = Quaternion.identity;
-		for (int i = 0; i < 150; i++)
+		for (int i = 0; i < 90; i++)
 		{
 			Instantiate(orbitingCube, Vector3.zero, Quaternion.identity, this.transform.parent);
 		}
 
-		for (int i = 0; i < 29; i++)
+		for (int i = 0; i < 13; i++)
 		{
 			Instantiate(glowingOrbitingCube, Vector3.zero, Quaternion.identity, this.transform.parent);
 		}

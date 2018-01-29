@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: icos
   m_Shader: {fileID: 3, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -31,7 +31,7 @@ Material:
     - _EmissionLM: 0
     - _Shininess: 1
     m_Colors:
-    - _Color: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
+    - _Color: {r: 0.17647058, g: 0.17647058, b: 0.17647058, a: 1}
     - _DiffuseColor: {r: 0.09558821, g: 0.09558821, b: 0.09558821, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
